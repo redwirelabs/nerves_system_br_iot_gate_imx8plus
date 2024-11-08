@@ -13,6 +13,8 @@ TPM2_TSS_ENGINE_INSTALL_STAGING = YES
 TPM2_TSS_ENGINE_DEPENDENCIES = host-pkgconf tpm2-tss
 TPM2_TSS_ENGINE_AUTORECONF = YES
 
-TPM2_TSS_ENGINE_CONF_OPTS = --with-enginesdir="/usr/lib/engines-3"
+TPM2_TSS_ENGINE_CONF_OPTS = \
+	--disable-digestsign \
+	--with-enginesdir="/usr/lib/engines-3"
 
 $(eval $(autotools-package))

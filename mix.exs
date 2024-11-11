@@ -44,8 +44,9 @@ defmodule Nerves.System.BR.Mixfile do
         "README.md",
         "VERSION"
       ],
+      name: :redwire_nerves_system_br,
       licenses: ["Apache-2.0", "GPL-2.0-or-later"],
-      links: %{"Github" => "https://github.com/nerves-project/nerves_system_br"}
+      links: %{"Github" => "https://github.com/redwirelabs/redwire_nerves_system_br"}
     ]
   end
 end
